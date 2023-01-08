@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-alembic"
+version = "0.1.0"
+description = ""
+authors = ["Uemerson Pinheiro Junior <uemersonpinheirojunior@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_alembic"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+alembic = "^1.9.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.9"
+black = {version = "^23.1a1", allow-prereleases = true}
+flake8 = "^6.0.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
